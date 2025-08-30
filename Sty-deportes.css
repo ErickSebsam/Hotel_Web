@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.general {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    position: relative;
+    color: #3b2d35;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Playfair Display", serif;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    background-color: rgba(255, 169, 216, 0.7);
+    box-shadow: 0 4px 12px rgba(117, 4, 66, 0.15);
+    border-bottom: 1px solid #ffffff;
+    padding: 0px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.opciones {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#rosa {
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+#logo {
+    width: 200px;
+    height: auto;
+}
+
+.opciones a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin: 0 15px;
+    transition: 0.3s;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.2rem;
+}
+
+.opciones a:hover {
+    color: #ff4b9f;
+}
+.contenido {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-content: center;
+    align-items: center;
+    
+    min-height: 100vh;
+    padding: 20px;
+    background-repeat: no-repeat;
+}
+#titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin: 40px;
+    font-family: "Playfair Display", serif;
+    padding: 20px;
+    box-shadow: 0 6px 5px rgba(0,0,0,0.05);
+}
+#descripcion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin: 50px;
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+}
+.deportes {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 0 auto; 
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(117, 4, 66, 0.15);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.Yoga {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: rgb(255, 242, 250, 0.8);
+}
+.YogaD {
+    font-size: 20px;
+    margin: 40px;
+    text-align: justify;
+}
+.imgY{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Gym{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: rgb(255, 242, 250, 0.8);
+}
+.GymD{
+    font-size: 20px;
+    margin: 40px;
+    text-align: justify;
+}
+.GymD h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.YogaD h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.piscina{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: rgb(255, 242, 250, 0.8);
+}
+.piscinaD{
+    font-size: 20px;
+    margin: 40px;
+    text-align: justify;
+}
+.piscinaD h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.imgP{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.frase{
+    font-size: 25px;
+    text-align: center;
+    font-style: italic;
+    font-family: "Cormorant Garamond", serif;
+    color:rgb(255, 163, 224);
+    background-color: rgb(58, 24, 46);
+    padding: 40px;
+}
+
