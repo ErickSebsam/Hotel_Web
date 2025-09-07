@@ -68,15 +68,40 @@ h3 {
 .opciones a:hover {
     color: #ff4b9f;
 }
+
 .contenido {
     display: grid;
     grid-template-rows: auto 1fr;
     justify-content: center;
     align-items: center;
-    
     min-height: 100vh;
     padding: 20px;
     background-repeat: no-repeat;
+}
+
+.bg-gastronomia {
+    background-image: url("./imagenes/img-gastronomia/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 80px 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: relative;
+}
+
+.bg-gastronomia::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+.bg-gastronomia .content {
+    position: relative;
 }
 #titulo {
     display: flex;
@@ -86,8 +111,9 @@ h3 {
     margin: 40px;
     font-family: "Playfair Display", serif;
     padding: 20px;
-    box-shadow: 0 6px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 6px 5px rgba(0, 0, 0, 0.05);
 }
+
 #descripcion {
     display: flex;
     justify-content: center;
@@ -97,19 +123,23 @@ h3 {
     text-align: center;
     font-family: "Cormorant Garamond", serif;
 }
-.deportes {
-  display: grid;
-  grid-template-columns: 1fr;
-  width: 60%;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto 0 auto; 
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(117, 4, 66, 0.15);
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.5);
+
+.Comidas {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(117, 4, 66, 0.15);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
-.Yoga {
+
+.Desayuno {
     display: grid;
     grid-template-columns: auto 1fr;
     justify-content: center;
@@ -117,38 +147,39 @@ h3 {
     margin-bottom: 30px;
     background-color: rgb(255, 242, 250, 0.8);
 }
-.YogaD {
-    font-size: 20px;
-    margin: 40px;
-    text-align: justify;
+
+.DesayunoD {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 0 30px;
+    gap: 20px
 }
-.imgY{
+
+.DescripD {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+
+}
+
+.imgD {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.Gym{
-    display: grid;
-    grid-template-columns: 1fr auto;
+
+.imgsD {
+    display: flex;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-    background-color: rgb(255, 242, 250, 0.8);
+    gap: 100px;
 }
-.GymD{
-    font-size: 20px;
-    margin: 40px;
-    text-align: justify;
+
+.imgsD img {
+    border-radius: 100%;
 }
-.GymD h2{
-    text-align: center;
-    margin-bottom: 40px;
-}
-.YogaD h2{
-    text-align: center;
-    margin-bottom: 40px;
-}
-.piscina{
+
+.dinner {
     display: grid;
     grid-template-columns: auto 1fr;
     justify-content: center;
@@ -156,27 +187,43 @@ h3 {
     margin-bottom: 30px;
     background-color: rgb(255, 242, 250, 0.8);
 }
-.piscinaD{
+
+.almuerzoD {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 0 30px;
+    gap: 20px
+}
+
+.DescripA {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     font-size: 20px;
-    margin: 40px;
-    text-align: justify;
+
 }
-.piscinaD h2{
-    text-align: center;
-    margin-bottom: 40px;
-}
-.imgP{
+
+.imgA {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.frase{
+
+.imgsA {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.imgsA img {
+    border-radius: 100%;
+}
+.frase {
     font-size: 25px;
     text-align: center;
     font-style: italic;
     font-family: "Cormorant Garamond", serif;
-    color:rgb(255, 163, 224);
+    color: rgb(255, 163, 224);
     background-color: rgb(58, 24, 46);
     padding: 40px;
 }
-
