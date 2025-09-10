@@ -26,7 +26,6 @@ h3 {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    border-bottom: 1px solid #ffffff;
     background-color: rgba(255, 169, 216, 0.7);
     box-shadow: 0 4px 12px rgba(117, 4, 66, 0.15);
     padding: 0px 20px;
@@ -37,8 +36,9 @@ h3 {
 
 .opciones {
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
+    align-items: center;
+
 }
 
 #rosa {
@@ -141,7 +141,6 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -178,3 +177,18 @@ h3 {
 .habitacion h2, .habitacionc h2 {
     margin: 10px 0;
 }
+.habitacion button, .habitacionc button{
+    background-color: #ff4b9f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+.habitacion button:hover, .habitacionc button:hover{
+    background-color: #e0438f;
+}
+

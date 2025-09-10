@@ -21,9 +21,9 @@ h3 {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    border-bottom: 1px solid #ffffff;
     background-color: rgba(255, 169, 216, 0.7);
     box-shadow: 0 4px 12px rgba(117, 4, 66, 0.15);
+    border-bottom: 1px solid #ffffff;
     padding: 0px 20px;
     position: sticky;
     top: 0;
@@ -32,8 +32,8 @@ h3 {
 
 .opciones {
     display: flex;
-    align-items: center;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 #rosa {
@@ -169,6 +169,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    object-fit: cover;
 }
 .frase{
     font-size: 25px;
