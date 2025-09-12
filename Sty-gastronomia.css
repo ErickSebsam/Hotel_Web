@@ -80,7 +80,7 @@ h3 {
 }
 
 .bg-gastronomia {
-    background-image: url("/img-gastronomia/background.jpg");
+    background-image: url("img-gastronomia/background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
