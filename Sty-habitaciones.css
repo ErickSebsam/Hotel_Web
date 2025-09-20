@@ -73,99 +73,107 @@ h3 {
 .opciones a:hover {
     color: #ff4b9f;
 }
-.contenido{
-        background: rgba(255, 230, 238, 0.7);
-        box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+
+.contenido {
+    background: rgba(255, 230, 238, 0.7);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
 }
-.contenido h1{
+
+.contenido h1 {
     text-align: center;
     padding: 32px 0 0;
     word-spacing: 10px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
     font-family: 'Playfair Display', serif;
     font-weight: bold;
-    font-size: 2.5rem; 
-    color: #3d2b1f; 
+    font-size: 2.5rem;
+    color: #3d2b1f;
     text-align: center;
     margin-bottom: 10px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
-.habitaciones{
+
+.habitaciones {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 32px;
+    row-gap: 32px;
     padding: 32px;
     border-radius: 16px;
     justify-content: space-evenly;
     justify-items: center;
-    
+
 }
 
-.descripcion img{
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 16px;
+.descripcion img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 16px;
 }
 
-#texto h2{
-  text-align: center;
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-  
+#texto h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+
 }
-.descripcion p{
-  margin-top: 6px;
-  line-height: 1.7;
-  font-size: 1.02rem;
-  color: #3b2d35;
+
+.descripcion p {
+    margin-top: 6px;
+    line-height: 1.7;
+    font-size: 1.02rem;
+    color: #3b2d35;
 }
 
 .barra {
     display: flex;
     flex-direction: column;
-    color:rgb(255, 163, 224);
+    color: rgb(255, 163, 224);
     background-color: rgb(58, 24, 46);
 }
+
 .barra h2,
 .barra p {
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     font-style: italic;
     font-family: "Cormorant Garamond", serif;
-    color:rgb(255, 163, 224);
+    color: rgb(255, 163, 224);
     background-color: rgb(58, 24, 46);
     padding: 40px;
 }
-.habitacion, .habitacionc{
+
+.habitacion,
+.habitacionc {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 65%;
+    width: 80%;
     text-align: justify;
     padding: 20px 0;
-
 }
+
 .habitacion img {
     width: 80%;
-    border-radius: 12px;
-    height: 300px;
     object-fit: fill;
     margin: 10px;
-  border-radius: 20px 0;
+    border-radius: 20px 0;
+    height: 400px;
 }
-.habitacionc img{
+
+.habitacionc img {
     width: 80%;
-    border-radius: 12px;
-    height: 300px;
     object-fit: cover;
     margin: 10px;
-  border-radius: 20px 0;
+    border-radius: 20px 0;
+    height: 400px;
 }
-.habitacion p, .habitacionc p {
+
+.habitacion p,
+.habitacionc p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     color: #5f5f5f;
@@ -174,10 +182,14 @@ h3 {
     margin-bottom: 20px;
     line-height: 1.6;
 }
-.habitacion h2, .habitacionc h2 {
+
+.habitacion h2,
+.habitacionc h2 {
     margin: 10px 0;
 }
-.habitacion button, .habitacionc button{
+
+.habitacion button,
+.habitacionc button {
     background-color: #ff4b9f;
     color: white;
     border: none;
@@ -188,7 +200,171 @@ h3 {
     transition: background-color 0.3s;
     margin-bottom: 20px;
 }
-.habitacion button:hover, .habitacionc button:hover{
+
+.habitacion button:hover,
+.habitacionc button:hover {
     background-color: #e0438f;
 }
 
+@media (max-width: 1059px) { /*header */
+    .opciones {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 15px;
+    }
+
+    .logo {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .habitacion,
+    .habitacionc {
+        width: 85%;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    .habitacion,
+    .habitacionc {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .habitacion,
+    .habitacionc {
+        width: 95%;
+    }
+}
+
+@media (max-width: 950px) {
+    .habitaciones {
+        grid-template-columns: 1fr;
+    }
+
+    .habitacion,
+    .habitacionc {
+        width: 85%;
+    }
+
+    .barra h2,
+    .barra p {
+        font-size: 18px;
+        padding: 20px;
+    }
+}
+@media (max-width: 720px) { /*header */
+    .opciones{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #logo{
+        width: 120px;
+    }
+    #rosa {
+    width: 40px;
+    height: 40px;
+    }
+}
+@media (max-width: 600px) { /*header */
+    .opciones a{
+        font-size: 1rem;
+        margin: 0 8px;
+    }
+    .habitacion img{
+        height: 300px;
+    }
+    .habitacion p, .habitacionc p{
+        padding: 0 20px;
+    }
+    .contenido h1{
+        font-size: 2rem;
+        padding: 20px 0 0;
+    }
+}
+@media (max-width: 500px) {
+    .habitacion img{
+        height: 200px;
+    }
+}
+ @media (max-width: 444px) {    /*header */
+    .general{
+        display: flex;
+        flex-direction: row;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .opciones{
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+        height: 40%;
+    }
+    .logo{
+     display: flex;
+        flex-direction: column; 
+        gap: 0;
+        margin-top: 10px;
+    }
+    .menu{
+        padding: 10px 0;
+        height: 860px;
+    }
+    .opciones a{
+        font-size: 0.9rem;
+        margin: 0;
+    }
+    #logo{
+        width: 100px;
+    }
+}
+@media (max-width: 444px) {
+        .habitacion, .habitacionc {
+            width: 100%;
+            text-align: center;
+        }
+        .habitacion p, .habitacionc p{
+            width: 100%;
+            padding: 0 10px;
+            font-size: 15px;
+            margin-bottom: 0;
+        }
+        .habitacion h2, .habitacionc h2 {
+            font-size: 20px;
+        }.barra h2, .barra p {
+        font-size: 15px;
+        padding: 10px;
+    }
+    .habitaciones{
+        padding: 10px;
+    }
+
+}
+@media (max-width: 400px) {
+    .habitacion img{
+        height: 150px;
+    }
+    .habitacionc img{
+        height: 200px;
+    }
+    .contenido h1{
+        font-size: 1.5rem;
+    }
+    .habitacion p, .habitacionc p{
+        height: 200px;
+        overflow: scroll;
+    }
+
+}
+@media (max-width: 475px) {
+        .habitaciones{
+            padding: 0;
+        }
+
+}
