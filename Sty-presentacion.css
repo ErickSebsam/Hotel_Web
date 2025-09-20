@@ -74,9 +74,6 @@ h3 {
 
 .texto-superpuesto {
     position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: white;
     text-align: center;
 }
@@ -89,6 +86,10 @@ h3 {
 
 .imagen-fondo {
     width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contenido img {
@@ -304,11 +305,7 @@ footer {
     font-size: 13px;
     color: #999;
 }
-@media (max-width: 1393px) {
-    .texto-superpuesto{
-        top: 20%;
-    }
-}
+
 @media (max-width: 1059px) {
     .opciones{
         display: grid;
@@ -317,10 +314,5 @@ footer {
     }
     .logo{
         max-width: 250px;
-    }
-}
-@media (max-width: 1000px) {
-    .texto-superpuesto{
-        top: 15%;
     }
 }
