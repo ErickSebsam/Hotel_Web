@@ -314,7 +314,7 @@ h3 {
     }
     .menu{
         padding: 10px 0;
-        height: 860px;
+        height: 100vh;
     }
     .opciones a{
         font-size: 0.9rem;

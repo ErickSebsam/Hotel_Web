@@ -341,7 +341,7 @@ footer {
   }
 
   .reducido {
-    display: block; /* Mostrar el botón ☰ */
+    display: block;
   }
 
   .opciones {
@@ -406,5 +406,20 @@ footer {
 @media (max-width: 480px) {
   .opciones a{
     font-size: 12px;
+  }
+}
+
+@media (max-width: 390px) {
+  .servicio img {
+    width: 100%;       /* Ocupa todo el ancho disponible */
+    max-width: 250px;  /* Pero no pasa de 250px */
+    height: auto;      /* Mantiene proporción */
+  }
+}
+@media (max-width: 350px) {
+  .servicio img {
+    width: 100%;
+    max-width: 220px; /* más flexible aún */
+    height: auto;
   }
 }
