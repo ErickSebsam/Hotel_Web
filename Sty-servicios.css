@@ -267,6 +267,11 @@ h3 {
     padding: 0 20px;
   }
 }
+@media (max-width: 480px) {
+  .opciones a{
+    font-size: 12px;
+  }
+}
 @media (max-width: 390px) {
   .servicio img{
 
